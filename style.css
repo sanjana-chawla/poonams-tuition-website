@@ -1,90 +1,111 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
     padding: 0;
 }
 
-h2 {
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: url('https://via.placeholder.com/1200x400?text=Tuition+Classes+Banner') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#services {
+    background-color: #F5C6CB;
+}
+
+#location {
+    background-color: #D4EDDA;
+}
+
+#why-choose-us {
+    background-color: #C3E6CB;
+}
+
+#enroll {
+    background-color: #FFF3CD;
+}
+
+section h2 {
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Header Styles */
-header {
-    background-color: #007BFF;
-    color: white;
-    padding: 50px 0;
+section ul li {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-/* Section Styles */
-section {
-    padding: 40px 0;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    padding: 8px 0;
-}
-
-/* Contact Form Styles */
-.contact-form form {
-    display: grid;
-    gap: 20px;
-    max-width: 600px;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
     margin: 0 auto;
 }
 
-.contact-form label {
-    font-weight: bold;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 10px;
+form input, form textarea {
     width: 100%;
-    font-size: 1rem;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.contact-form button {
-    background-color: #28a745;
+form button {
+    padding: 12px;
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 15px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.contact-form button:hover {
-    background-color: #218838;
-}
-
-/* Testimonials Styles */
-.testimonial {
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.testimonial footer {
-    font-weight: bold;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #343a40;
-    color: white;
-}
-
-footer p {
-    margin: 5px;
+form button:hover {
+    background-color: #0056b3;
 }
