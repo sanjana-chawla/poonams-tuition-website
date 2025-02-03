@@ -1,51 +1,90 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
 }
 
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 header h1 {
     font-size: 3em;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-section {
-    padding: 20px;
-    margin: 10px;
-}
-
-h2 {
-    font-size: 2em;
     margin-bottom: 10px;
 }
 
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 ul li {
-    margin: 10px 0;
+    padding: 8px 0;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
+/* Contact Form Styles */
+.contact-form form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
     width: 100%;
-    bottom: 0;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+/* Testimonials Styles */
+.testimonial {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial footer {
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer p {
+    margin: 5px;
 }
