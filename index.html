@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poonam's Tuition Classes: Expert guidance from a tutor with over 25 years of experience. Subjects for Class 3 to 10. Enroll now!">
+    <meta name="keywords" content="tuition, online classes, education, Hindi, New Delhi, Poonam">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Poonam's Tuition Classes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-5">
         <h1>Poonam's Tuition Classes</h1>
         <p>Achieve Academic Excellence with Expert Guidance!</p>
     </header>
 
-    <section class="info">
+    <!-- Subjects & Classes Section -->
+    <section class="container my-5" data-aos="fade-up">
         <h2>Subjects & Classes</h2>
         <ul>
             <li><strong>Class 3rd to 8th:</strong> All Subjects</li>
             <li><strong>Class 9th & 10th:</strong> Hindi</li>
         </ul>
-
-        <h2>Contact Information</h2>
-        <p><strong>Location:</strong> D-2, Vasant Kunj, New Delhi</p>
-        <p><strong>Contact:</strong> +91-9811462324</p>
     </section>
 
-    <section class="why-choose-us">
+    <!-- Why Choose Us Section -->
+    <section class="container my-5" data-aos="fade-up">
         <h2>Why Choose Us?</h2>
         <ul>
             <li>25+ Years of Teaching Experience</li>
@@ -35,17 +42,55 @@
         </ul>
     </section>
 
-    <section class="blog">
-        <h2>Latest Posts</h2>
-        <ul id="blog-posts">
-            <!-- Blog posts will be added here dynamically -->
-        </ul>
+    <!-- Testimonials Section -->
+    <section class="container my-5" data-aos="fade-up">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial">
+            <p>"Poonam ma'am is the best teacher I have ever had. Her personalized attention helped me improve my grades drastically!"</p>
+            <footer>- Student A</footer>
+        </div>
+        <div class="testimonial">
+            <p>"The flexible learning options helped me stay on track even during the pandemic. Highly recommend!"</p>
+            <footer>- Parent B</footer>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Poonam's Tuition Classes. All rights reserved.</p>
+    <!-- Contact Form Section -->
+    <section class="container my-5 contact-form" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mqkjjyvd" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Location Map Section -->
+    <section class="container my-5" data-aos="fade-up">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=...your-location..." width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact: +91-9811462324 | D-2, Vasant Kunj, New Delhi</p>
+        <p>&copy; 2025 Poonam's Tuition Classes</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
